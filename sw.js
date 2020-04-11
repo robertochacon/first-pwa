@@ -10,8 +10,9 @@ self.addEventListener('install', e => {
             '/css/animate.css',
             '/js/app.js',
             '/js/main.js',
+            '/songs/ok.wav',
             '/img/image.png',
-            '/img/basketball.gif'
+            '/img/micke.png'
         ]);
     });
 
