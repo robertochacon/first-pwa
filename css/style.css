@@ -18,6 +18,8 @@ body {
 }
 
 a {
+    padding-bottom: 5px;
+    border-bottom: gray;
     color: gray;
     text-decoration: none;
     cursor: pointer;
