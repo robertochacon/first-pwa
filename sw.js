@@ -17,14 +17,14 @@ self.addEventListener('install', e => {
 
             //deployment
             return cache.addAll([
-                '/index.html',
-                '/detail.html',
-                '/css/style.css',
-                '/css/animate.css',
-                '/js/app.js',
-                '/js/main.js',
-                '/img/image.png',
-                '/img/micky.png'
+                '/first-pwa/index.html',
+                '/first-pwa/detail.html',
+                '/first-pwa/css/style.css',
+                '/first-pwa/css/animate.css',
+                '/first-pwa/js/app.js',
+                '/first-pwa/js/main.js',
+                '/first-pwa/img/image.png',
+                '/first-pwa/img/micky.png'
             ]);
 
         });
