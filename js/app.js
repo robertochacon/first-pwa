@@ -1,3 +1,6 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/2020/first_wpa/sw.js');
+    //local
+    // navigator.serviceWorker.register('/2020/first_wpa/sw.js');
+    //deployment
+    navigator.serviceWorker.register('sw.js');
 }
