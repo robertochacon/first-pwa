@@ -12,13 +12,3 @@ logo.addEventListener('click', function() {
     }
 
 });
-
-
-if (window.caches) {
-    caches.open('testing-here').then(cache => {
-        cache.add('/2020/first_wpa/index.html')
-    })
-} else {
-    console.log('no cache');
-
-}
