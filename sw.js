@@ -1,21 +1,21 @@
 self.addEventListener('install', e => {
 
-    const NAME_STATIC = 'statis';
+    const cachePromise = caches.open('primer_wpa-rca')
+        .then(cache => {
 
-    const CACHES_FILES = caches.open(NAME_STATIC).then(cache => {
-        cache.addAll([
-            '/index.html',
-            '/detail.html',
-            '/css/style.css',
-            '/css/animate.css',
-            '/js/app.js',
-            '/js/main.js',
-            '/songs/ok.wav',
-            '/img/image.png',
-            '/img/micke.png'
-        ]);
-    });
+            return cache.addAll([
+                '/2020/first_wpa/index.html',
+                '/2020/first_wpa/detail.html',
+                '/2020/first_wpa/css/style.css',
+                '/2020/first_wpa/css/animate.css',
+                '/2020/first_wpa/js/app.js',
+                '/2020/first_wpa/js/main.js',
+                '/2020/first_wpa/img/image.png',
+                '/2020/first_wpa/img/micky.png'
+            ]);
 
-    e.waitUntil(CACHES_FILES);
+        });
+
+    e.waitUntil(cachePromise);
 
 });

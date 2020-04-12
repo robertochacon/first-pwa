@@ -3,7 +3,7 @@
     "short_name": "Fist wpa",
     "description": "my fisrt app wpa",
     "background_color": "#FCE500",
-    "theme_color": "#FCE500",
+    "theme_color": "#D35400",
     "orientation": "portrait",
     "display": "standalone",
     "start_url": "./?utm_source=web_app_manifest",

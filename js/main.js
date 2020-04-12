@@ -1,13 +1,5 @@
 let logo = document.getElementById('imagen');
 
-// function callLogo() {
-//     logo.lassList.add('fadeIn');
-// }
-
-setTimeout(function() {
-    console.log('good')
-}, 1000);
-
 logo.addEventListener('click', function() {
     logo.classList.remove('fadeIn');
     logo.classList.add('fadeIn');
@@ -20,3 +12,13 @@ logo.addEventListener('click', function() {
     }
 
 });
+
+
+if (window.caches) {
+    caches.open('testing-here').then(cache => {
+        cache.add('/2020/first_wpa/index.html')
+    })
+} else {
+    console.log('no cache');
+
+}
